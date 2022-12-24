@@ -1,18 +1,19 @@
 {
-	"pages": [{
-            "path" : "pages/home/home",
-            "style" :                                                                                    
-            {
-                "navigationBarTitleText": "",
-                "enablePullDownRefresh": false
-            }
-            
+	"pages": [
+    {
+        "path" : "pages/home/home",
+        "style" :                                                                                    
+        {
+            "navigationBarTitleText": "",
+            "enablePullDownRefresh": false
         }
-        ,{
+        
+    },
+    {
             "path" : "pages/cate/cate",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                // "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             
@@ -21,7 +22,7 @@
             "path" : "pages/cart/cart",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                // "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             
@@ -30,30 +31,54 @@
             "path" : "pages/my/my",
             "style" :                                                                                    
             {
-                "navigationBarTitleText": "",
+                // "navigationBarTitleText": "",
                 "enablePullDownRefresh": false
             }
             
         }
+        
+    ],
+    "subPackages": [
+      {
+        "root": "subpkg",
+        "pages": [{
+                    "path" : "goods_detail/goods_detail",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+                ,{
+                    "path" : "goods_list/goods_list",
+                    "style" :                                                                                    
+                {
+                    "navigationBarTitleText": "",
+                    "enablePullDownRefresh": false
+                }
+                
+                }
+            ]
+      }
     ],
 	"globalStyle": {
-		"navigationBarTextStyle": "black",
-		"navigationBarTitleText": "uni-app",
-		"navigationBarBackgroundColor": "#F8F8F8",
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "网上商城",
+		"navigationBarBackgroundColor": "#f80a1a",
 		"backgroundColor": "#F8F8F8",
 		"app-plus": {
 			"background": "#efeff4"
 		}
 	},
   "tabBar": {
-    "selectedColor": "#C00000",
     "list": [
-      {
-        "pagePath": "pages/home/home",
-        "text": "首页",
-        "iconPath": "/static/tab_icons/home.png",
-        "selectedIconPath": "/static/tab_icons/home-active.png"
-      },
+     {
+       "pagePath": "pages/home/home",
+       "text": "首页",
+       "iconPath": "/static/tab_icons/home.png",
+       "selectedIconPath": "/static/tab_icons/home-active.png"
+     },
       {
         "pagePath": "pages/cate/cate",
         "text": "分类",
