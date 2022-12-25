@@ -1,6 +1,6 @@
 <template>
   <view>
-    列表
+    <view>1</view>
   </view>
 </template>
 
