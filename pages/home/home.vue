@@ -1,5 +1,8 @@
 <template>
   <view>
+    <view class="top">
+    <my-search @click="gotoSearch"></my-search>
+    </view>
     <swiper class="maxBox" indicator-dots>
       <swiper-item v-for="(obj,i) in swiperList" :key="i">
         <navigator class="images" :url="`/subpkg/goods_detail/goods_detail?goods_id=${obj.goods_id}`">
@@ -87,6 +90,13 @@
                })
              })
              this.floorList = res.message
+           },
+           gotoSearch(){
+             console.log('my')
+             uni.navigateTo({
+               url:'/subpkg/search/search'
+             })
+            
            }
     },
     
@@ -94,6 +104,11 @@
 </script>
 
 <style lang="scss">
+  .top{
+    position: sticky;
+    top:0;
+    z-index: 9999;
+  }
   .images{
     height: 330rpx;
     image{
