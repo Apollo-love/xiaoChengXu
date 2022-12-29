@@ -37,7 +37,9 @@
 </template>
 
 <script>
+  import tab from '@/mixins/table-bar.js'
   export default {
+    mixins:[tab],
     data() {
       return {
         swiperList:[],
@@ -104,6 +106,11 @@
 </script>
 
 <style lang="scss">
+  page{
+    padding: 0;
+    margin: 0;
+    
+  }
   .top{
     position: sticky;
     top:0;

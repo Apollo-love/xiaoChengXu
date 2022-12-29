@@ -1,6 +1,6 @@
 {
-    "name" : "shop",
-    "appid" : "",
+    "name" : "龙腾",
+    "appid" : "__UNI__EB40874",
     "description" : "",
     "versionName" : "1.0.0",
     "versionCode" : "100",
@@ -49,13 +49,13 @@
     "quickapp" : {},
     /* 快应用特有相关 */
     "mp-weixin" : {
-        /* 小程序特有相关 */
         "appid" : "wxa3f31d6a4c59ee06",
         "setting" : {
             "urlCheck" : true,
-            "checkSiteMap":false
+            "checkSiteMap" : false
         },
         "usingComponents" : true,
+        "requiredPrivateInfos" : [ "getLocation", "chooseLocation", "chooseAddress" ],
         "unipush" : {
             "enable" : true
         }
